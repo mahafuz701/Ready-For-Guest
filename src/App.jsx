@@ -11,6 +11,10 @@ import SuccessStoryDublin from './components/SuccessStoryDublin.jsx';
 import MaximiseProfitsSection from './components/MaximiseProfitsSection.jsx';
 import RentToRentSuccessSection from './components/RentToRentSuccessSection.jsx';
 import FaqAirbnbPartnership from './components/FaqAirbnbPartnership.jsx';
+import AutomationSection from './components/AutomationSection.jsx';
+//import AutomationCarouselcs  from '/.components/AutomationCarouselcs.jsx';
+import PropertyCarouselUltra from './components/PropertyCarouselUltra.jsx';
+
 import BigPortfolioCTA from './components/BigPortfolioCTA';
 import ManageScaleSection from './components/ManageScaleSection.jsx';
 
@@ -28,6 +32,8 @@ export default function App() {
       <MaximiseProfitsSection />
       <RentToRentSuccessSection />
       <FaqAirbnbPartnership />
+      <AutomationSection />
+     <PropertyCarouselUltra />
       <BigPortfolioCTA />
       <ManageScaleSection />
       </>

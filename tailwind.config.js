@@ -1,3 +1,15 @@
+/**// @type {import('tailwindcss').Config} */
+//export default {
+ // content: [
+  //  "./index.html",
+  //  "./src/**/*.{js,jsx,ts,tsx}",
+ // ],
+ // theme: {
+ //   extend: {},
+//},
+ // plugins: [],
+//}
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,8 +17,18 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        marquee: "marquee 40s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" }, // right → left
+        },
+      },
+    },
   },
   plugins: [],
-}
+};
 
