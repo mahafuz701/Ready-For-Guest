@@ -4,44 +4,44 @@ const tabs = [
   {
     id: "none",
     label: "No properties yet",
-    title: "Turn your idea into a thriving business",
+    title: "Start your short-let business with confidence",
     text:
-      "Thinking about becoming a property manager but not sure where to start? Whether you're new to short-term lets or still researching your first step, we'll guide you through every stage - from finding your first property to becoming a confident, profitable partner. We'll give you:",
+      "Thinking about launching your own Airbnb or short-let business but not sure where to begin? ReadyForGuest supports you from day one — from sourcing your first property to building a profitable hosting operation.",
     points: [
-      "Clear, step-by-step training to get started",
-      "Expert help setting up your first property",
-      "Support with regulation, finance and planning",
-      "Long-term guidance to help you grow your portfolio",
+      "Step-by-step onboarding and training",
+      "Guidance to secure your first short-let property",
+      "Help with compliance, pricing and setup",
+      "Ongoing support to grow your portfolio",
     ],
     image:
       "https://images.unsplash.com/photo-1523217582562-09d0def993a6",
   },
   {
     id: "1-5",
-    label: "1-5 Properties",
+    label: "1–5 Properties",
     title: "Build a profitable hosting foundation",
     text:
-      "Perfect for hosts starting to scale with confidence and support.",
+      "Perfect for new and growing hosts who want to maximise revenue while keeping operations simple and automated.",
     points: [
-      "Pricing optimisation",
-      "Guest communication",
-      "Cleaning & maintenance",
-      "Performance insights",
+      "Smart pricing optimisation",
+      "Unified guest messaging",
+      "Cleaning & turnover coordination",
+      "Performance insights and reporting",
     ],
     image:
       "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1",
   },
   {
     id: "6-10",
-    label: "6-10 Properties",
+    label: "6–10 Properties",
     title: "Professional management at scale",
     text:
-      "Run multiple properties efficiently with automation and expert support.",
+      "Run multiple listings efficiently with ReadyForGuest’s automation tools and expert operational support.",
     points: [
-      "Dedicated account support",
-      "Advanced reporting",
-      "Operational workflows",
-      "Growth planning",
+      "Dedicated account guidance",
+      "Advanced analytics & reporting",
+      "Operational workflows & automations",
+      "Growth and pricing strategy",
     ],
     image:
       "https://images.unsplash.com/photo-1560185127-6ed189bf02f4",
@@ -51,12 +51,12 @@ const tabs = [
     label: "10+ Properties",
     title: "Enterprise-level partnership",
     text:
-      "Designed for large portfolios aiming for consistent, scalable growth.",
+      "Designed for professional operators and property managers scaling large portfolios across multiple locations.",
     points: [
-      "Enterprise pricing strategy",
-      "Multi-location support",
+      "Enterprise pricing strategies",
+      "Multi-location portfolio support",
       "Priority guest services",
-      "Custom portfolio planning",
+      "Custom growth and revenue planning",
     ],
     image:
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
@@ -72,15 +72,15 @@ export default function PartnerTabs() {
 
         {/* HEADER */}
         <h2 className="text-4xl font-extrabold mb-4">
-          Who can become a partner?
+          Who is ReadyForGuest for?
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mb-12">
-          Whether you're just starting out or managing 20+ listings, Houst is
-          built to support hosts at every step – with tools and guidance
-          designed around your real needs.
+          Whether you're launching your first Airbnb or managing a growing
+          portfolio, ReadyForGuest is built to support hosts at every stage —
+          with automation, tools and expert guidance tailored to your needs.
         </p>
 
-        {/* TABS (same width + centered like screenshot) */}
+        {/* TABS */}
         <div className="bg-gray-100 rounded-lg p-2 flex gap-2 mb-10">
           {tabs.map((tab) => (
             <button
@@ -98,14 +98,14 @@ export default function PartnerTabs() {
           ))}
         </div>
 
-        {/* CONTENT WRAPPER */}
-        <div className="bg-gray-50 rounded-xl ">
+        {/* CONTENT */}
+        <div className="bg-gray-50 rounded-xl p-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             {/* IMAGE */}
             <img
               src={active.image}
-              alt=""
+              alt={active.title}
               className="w-full h-[460px] object-cover rounded-md"
             />
 
@@ -130,8 +130,11 @@ export default function PartnerTabs() {
                 ))}
               </ul>
 
-              <button className="bg-black text-white px-8 py-4 rounded-md font-semibold hover:bg-gray-900 transition">
-                LEARN HOW TO GET STARTED
+              <button
+                onClick={() => window.open("/pricing", "_self")}
+                className="bg-black text-white px-8 py-4 rounded-md font-semibold hover:bg-gray-900 transition"
+              >
+                View Our Pricing
               </button>
             </div>
 
@@ -142,4 +145,3 @@ export default function PartnerTabs() {
     </section>
   );
 }
-

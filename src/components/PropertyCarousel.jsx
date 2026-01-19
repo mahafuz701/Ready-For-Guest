@@ -1,28 +1,40 @@
 export default function AutomationCarousel() {
   const features = [
     {
-      title: "Smart pricing",
+      title: "Smart Pricing Engine",
       desc:
-        "Automatically adjust your Airbnb prices 24/7 based on demand, seasonality, and local competition.",
+        "Automatically optimise nightly rates 24/7 based on market demand, seasonality, local events and competitor pricing.",
       icon: "📈",
     },
     {
-      title: "Calendar sync",
+      title: "Channel Calendar Sync",
       desc:
-        "Instant calendar updates across Airbnb, Booking.com, and more — no clashes, no double bookings.",
+        "Real-time calendar synchronisation across Airbnb, Booking.com and other channels to prevent double bookings.",
       icon: "📅",
     },
     {
-      title: "One dashboard",
+      title: "Unified Inbox",
       desc:
-        "Manage bookings, guest messages, and performance from one simple, unified workspace.",
+        "Manage all guest messages from every booking site in one simple, centralised inbox.",
       icon: "🧩",
     },
     {
-      title: "Mobile control",
+      title: "Mobile-Ready Dashboard",
       desc:
-        "Stay on top of pricing, bookings, and guests from anywhere using our mobile-ready platform.",
+        "Stay in control on the go — manage pricing, bookings and guest communication from any device.",
       icon: "📱",
+    },
+    {
+      title: "Automated Guest Messaging",
+      desc:
+        "Send instant, personalised messages to guests for check-in, house rules and FAQs automatically.",
+      icon: "💬",
+    },
+    {
+      title: "Performance Insights",
+      desc:
+        "Track occupancy, earnings and booking trends with clear dashboards and reporting tools.",
+      icon: "📊",
     },
   ];
 
@@ -33,13 +45,15 @@ export default function AutomationCarousel() {
         {/* HEADER */}
         <div className="grid lg:grid-cols-2 gap-16 mb-20">
           <h2 className="text-white text-5xl font-extrabold leading-tight">
-            Powerful automation.<br />Zero hassle.
+            Powerful automation.<br />
+            <span className="text-blue-200">Zero hassle.</span>
           </h2>
 
           <p className="text-blue-100 text-lg leading-relaxed max-w-xl">
-            Manage everything from one simple platform. Smart pricing adjusts
-            your rates automatically, calendar sync prevents double bookings,
-            and a unified inbox keeps every guest message in one place.
+            ReadyForGuest gives you one intelligent platform to run your entire
+            short-let business. From smart pricing and calendar sync to automated
+            guest messaging and performance insights — everything works together
+            seamlessly.
           </p>
         </div>
 
@@ -50,9 +64,9 @@ export default function AutomationCarousel() {
             {[...features, ...features].map((item, i) => (
               <div
                 key={i}
-                className="min-w-[280px] max-w-[280px] bg-[#F5FAFF] rounded-2xl p-8 shadow-lg"
+                className="min-w-[300px] max-w-[300px] bg-[#F5FAFF] rounded-2xl p-8 shadow-lg hover:shadow-xl transition"
               >
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-2xl mb-6">
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-2xl mb-6 shadow-sm">
                   {item.icon}
                 </div>
 

@@ -13,7 +13,7 @@ export default function MaximizeExact() {
           <img
             src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"
             className="relative z-10 rounded-2xl shadow-xl w-[420px]"
-            alt=""
+            alt="ReadyForGuest property"
           />
 
           {/* FLOAT CARD TOP */}
@@ -22,13 +22,14 @@ export default function MaximizeExact() {
               <img
                 src="https://randomuser.me/api/portraits/women/44.jpg"
                 className="w-10 h-10 rounded-full"
+                alt="Guest"
               />
               <div className="text-sm">
-                <p className="font-semibold mb-1">Upcoming booking:</p>
-                <p className="font-semibold">Lucia Caparas, 4 nights</p>
+                <p className="font-semibold mb-1">Upcoming booking</p>
+                <p className="font-semibold">Lucia Caparas · 4 nights</p>
                 <p className="text-xs text-gray-600">
-                  Check in: Fri, Nov 1st 2024<br />
-                  Check out: Tue, Nov 5th 2024
+                  Check-in: Fri, Nov 1st 2024<br />
+                  Check-out: Tue, Nov 5th 2024
                 </p>
                 <p className="text-xs font-semibold mt-1">
                   Airbnb revenue: £1,404.00
@@ -43,13 +44,14 @@ export default function MaximizeExact() {
               <img
                 src="https://randomuser.me/api/portraits/men/32.jpg"
                 className="w-10 h-10 rounded-full"
+                alt="Guest"
               />
               <div className="text-sm">
-                <p className="font-semibold mb-1">Upcoming booking:</p>
-                <p className="font-semibold">Martin Thomas, 9 nights</p>
+                <p className="font-semibold mb-1">Upcoming booking</p>
+                <p className="font-semibold">Martin Thomas · 9 nights</p>
                 <p className="text-xs text-gray-600">
-                  Check in: Fri, Nov 22nd 2024<br />
-                  Check out: Sun, Dec 1st 2024
+                  Check-in: Fri, Nov 22nd 2024<br />
+                  Check-out: Sun, Dec 1st 2024
                 </p>
                 <p className="text-xs font-semibold mt-1">
                   Airbnb revenue: £2,378.00
@@ -63,8 +65,8 @@ export default function MaximizeExact() {
         {/* RIGHT SIDE */}
         <div>
           <h2 className="text-4xl font-extrabold leading-tight mb-10">
-            Maximize Your Airbnb <br />
-            Business with Houst
+            Maximise Your Airbnb <br />
+            Business with ReadyForGuest
           </h2>
 
           <div className="space-y-6 mb-10">
@@ -73,40 +75,43 @@ export default function MaximizeExact() {
                 Low-Risk, High-Reward Model
               </h4>
               <p className="text-gray-600">
-                Grow your Airbnb business without heavy upfront costs.
+                Grow your short-let business without heavy upfront costs or long-term contracts.
               </p>
             </div>
 
             <div>
               <h4 className="font-semibold mb-1">
-                All-in-One Hosting Tools
+                All-in-One Hosting Platform
               </h4>
               <p className="text-gray-600">
-                No need for extra software — our platform covers it all.
+                Manage bookings, pricing, calendars and guest messages from one dashboard.
               </p>
             </div>
 
             <div>
               <h4 className="font-semibold mb-1">
-                Scale 3x Faster
+                Scale Faster with Automation
               </h4>
               <p className="text-gray-600">
-                Skip years of trial and error — plug in and grow.
+                Smart pricing, channel syncing and automated messaging help you grow 2–3× faster.
               </p>
             </div>
 
             <div>
               <h4 className="font-semibold mb-1">
-                Effortless Property Management
+                Expert Support, 24/7
               </h4>
               <p className="text-gray-600">
-                Save hours each week with our automation and expert support.
+                Our team handles guest communication and operational support around the clock.
               </p>
             </div>
           </div>
 
-          <button className="bg-black text-white px-10 py-4 rounded-md font-semibold hover:bg-gray-900 transition">
-            GET STARTED
+          <button
+            onClick={() => window.open("/pricing", "_self")}
+            className="bg-black text-white px-10 py-4 rounded-md font-semibold hover:bg-gray-900 transition"
+          >
+            View Our Pricing
           </button>
         </div>
 

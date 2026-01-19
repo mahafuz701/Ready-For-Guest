@@ -9,17 +9,21 @@ export default function MaximiseProfitsSection() {
           <div>
             <h2 className="text-4xl font-extrabold leading-tight mb-8">
               Maximise Your Airbnb <br />
-              Profits with Houst
+              Profits with ReadyForGuest
             </h2>
 
             <p className="text-lg text-gray-600 max-w-xl mb-10">
-              We optimise Airbnb pricing and presentation — from luxury stays
-              to hidden gems — so your listings attract more guests and
-              maximise revenue with ReadyForGuest’s expert systems.
+              We optimise your Airbnb pricing, visibility and guest experience —
+              so your listings attract more bookings and generate higher revenue.
+              ReadyForGuest combines smart automation with expert support to
+              help you scale faster and earn more.
             </p>
 
-            <button className="bg-black text-white px-12 py-4 rounded-xl font-semibold hover:bg-gray-900 transition">
-              GET STARTED
+            <button
+              onClick={() => window.open("/pricing", "_self")}
+              className="bg-black text-white px-12 py-4 rounded-xl font-semibold hover:bg-gray-900 transition"
+            >
+              View Our Pricing
             </button>
           </div>
 
@@ -29,19 +33,23 @@ export default function MaximiseProfitsSection() {
             {/* CIRCULAR IMAGES */}
             <img
               src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
-              className="absolute top-0 left-28 w-60 h-60 rounded-full object-cover"
+              alt="Luxury apartment"
+              className="absolute top-0 left-28 w-60 h-60 rounded-full object-cover shadow-lg"
             />
             <img
               src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"
-              className="absolute top-10 right-0 w-44 h-44 rounded-full object-cover"
+              alt="Modern living room"
+              className="absolute top-10 right-0 w-44 h-44 rounded-full object-cover shadow-lg"
             />
             <img
               src="https://images.unsplash.com/photo-1618220179428-22790b461013"
-              className="absolute bottom-24 left-0 w-40 h-40 rounded-full object-cover"
+              alt="Cozy bedroom"
+              className="absolute bottom-24 left-0 w-40 h-40 rounded-full object-cover shadow-lg"
             />
             <img
               src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2b8f"
-              className="absolute bottom-0 right-24 w-52 h-52 rounded-full object-cover"
+              alt="Stylish interior"
+              className="absolute bottom-0 right-24 w-52 h-52 rounded-full object-cover shadow-lg"
             />
 
             {/* FLOAT CARD – BOOKINGS */}
@@ -82,8 +90,8 @@ export default function MaximiseProfitsSection() {
                 <strong>Activity log</strong>
               </div>
               <p className="text-gray-600">
-                Attention needed: LDN-SDE284 <br />
-                Lead pipeline: LDN-BTU801
+                Guest support: Active <br />
+                New enquiry: LDN-BTU801
               </p>
             </div>
 

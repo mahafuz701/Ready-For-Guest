@@ -1,5 +1,3 @@
-
-
 export default function SuccessStory() {
   return (
     <section className="bg-white py-24">
@@ -28,9 +26,7 @@ export default function SuccessStory() {
 
             {/* ITEM */}
             <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center font-bold">
-                📊
-              </div>
+              <div className="text-2xl leading-none">📊</div>
               <p className="text-gray-700">
                 <span className="font-semibold">
                   Zero to Airbnb Success:
@@ -43,9 +39,7 @@ export default function SuccessStory() {
 
             {/* ITEM */}
             <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center font-bold">
-                💰
-              </div>
+              <div className="text-2xl leading-none">💰</div>
               <p className="text-gray-700">
                 <span className="font-semibold">
                   Profitable in Months:
@@ -58,9 +52,7 @@ export default function SuccessStory() {
 
             {/* ITEM */}
             <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center font-bold">
-                ⭐
-              </div>
+              <div className="text-2xl leading-none">⭐</div>
               <p className="text-gray-700">
                 <span className="font-semibold">
                   Scalable Growth with Ready for Guest:
