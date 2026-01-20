@@ -1,154 +1,128 @@
 export default function PricingPage() {
-  const services = [
-    {
-      title: "Optimise Your Listing",
-      desc: "Improve your listing performance with professional pricing, photos, descriptions and positioning to attract more guests.",
-      icon: "🛠️",
-    },
-    {
-      title: "Channel Calendar Sync",
-      desc: "Sync all your bookings across Airbnb, Booking.com and other platforms to avoid double bookings.",
-      icon: "📅",
-    },
-    {
-      title: "24/7 Guest Support",
-      desc: "Round-the-clock guest messaging and telephone support to handle enquiries, issues and check-ins.",
-      icon: "📞",
-    },
-    {
-      title: "Automation Tools",
-      desc: "Automate pricing, messaging, calendars and operations to save time and scale effortlessly.",
-      icon: "🤖",
-    },
-    {
-      title: "Worldwide Visibility",
-      desc: "Get your property listed across multiple booking channels and reach millions of travellers.",
-      icon: "🌍",
-    },
-    {
-      title: "Unified Dashboard",
-      desc: "Manage listings, bookings, guest messages and earnings from one central dashboard.",
-      icon: "🧑‍💼",
-    },
-  ];
-
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-24">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative w-full bg-gradient-to-b from-slate-50 via-white to-slate-100 py-32 overflow-hidden">
+      
+      {/* GLOW BACKDROP */}
+      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1100px] h-[1100px] bg-indigo-300/20 rounded-full blur-[180px]" />
 
-        {/* ===== HERO ===== */}
-        <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-            Flexible Pricing. <br className="hidden md:block" />
-            Only Pay for What You Need.
-          </h1>
+      <div className="relative w-full px-6 md:px-12 lg:px-20">
 
-          <p className="mt-6 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            ReadyForGuest lets you build a custom hosting plan based on your needs.
-            No setup fees. No long-term contracts. Total control over your costs.
-          </p>
-        </div>
+        <div className="relative max-w-6xl mx-auto">
 
-        {/* ===== SUBSCRIBE BANNER ===== */}
-        <div className="bg-[#1f2933] rounded-3xl py-14 px-6 md:px-12 text-center mb-24">
-          <h2 className="text-2xl md:text-4xl font-extrabold text-yellow-400 mb-8 leading-snug">
-            Only subscribe to what you need. <br />
-            Prices start from GBP / USD 20
-          </h2>
+          {/* RIGHT – CONTENT (NOW CENTERED & FULL WIDTH FEEL) */}
+          <div className="relative">
 
-          <p className="text-white/80 mb-10 max-w-3xl mx-auto">
-            Choose one service or combine multiple tools — from guest messaging
-            and telephone support to pricing automation and channel management.
-          </p>
+            {/* TITLE */}
+            <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight text-center">
+              Deal Package : ONLINE Property Management
+            </h2>
 
-          <div className="bg-white rounded-2xl shadow-lg py-8 px-6 flex justify-center">
-            <button
-              onClick={() =>
-                window.open(
-                  "https://calendly.com/airoperate_onboarding/30mins?month=2026-01",
-                  "_blank"
-                )
-              }
-              className="bg-red-600 hover:bg-red-700 transition-colors text-white font-semibold px-8 py-3 md:px-10 md:py-4 rounded-lg text-base md:text-lg"
-            >
-              Subscribe to Guest Support
-            </button>
-          </div>
-        </div>
+            {/* PRICE */}
+            <div className="flex justify-center items-end gap-3 mb-10">
+              <p className="text-5xl md:text-6xl font-extrabold text-indigo-600">
+                80,00 €
+              </p>
+              <p className="text-lg md:text-xl text-gray-500 font-semibold">
+                / month / Property
+              </p>
+            </div>
 
-        {/* ===== SERVICE GRID ===== */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-24">
-          {services.map((item, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-3xl shadow-md hover:shadow-xl transition p-8 border border-gray-100"
-            >
-              <div className="w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center text-2xl mb-6">
-                {item.icon}
+            {/* INTRO */}
+            <p className="text-gray-700 mb-10 leading-relaxed max-w-4xl mx-auto text-center">
+              Deal Package: Enjoy a hassle-free operation with our comprehensive online
+              property management service. Our package includes:
+            </p>
+
+            {/* FEATURES */}
+            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-6 text-gray-700 mb-14 max-w-5xl mx-auto text-base">
+              <li>• Dynamic Pricing</li>
+              <li>• Property Optimization</li>
+              <li>• Direct Bookings Management</li>
+              <li>• Calendar Synchronization</li>
+              <li>• 24/7 Telephone Support for Guests</li>
+              <li>• 24/7 Chat Support for Guests</li>
+            </ul>
+
+            {/* SAVE STRIP */}
+            <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-8 mb-16 max-w-4xl mx-auto">
+              <p className="text-gray-800 leading-relaxed text-center text-lg">
+                With us, you’ll save <strong>30% on overall management costs</strong>. Let us handle every
+                aspect of your property management so you can focus on what matters most.
+              </p>
+            </div>
+
+            {/* PACKAGE DESCRIPTION CARD */}
+            <div className="relative bg-white rounded-[32px] p-10 md:p-14 shadow-[0_40px_120px_rgba(0,0,0,0.12)] mb-16 border border-gray-200 max-w-5xl mx-auto">
+
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white text-xs font-semibold px-5 py-2 rounded-full tracking-widest">
+                PACKAGE DESCRIPTION
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                {item.title}
-              </h3>
-
-              <p className="text-gray-700 text-sm leading-relaxed">
-                {item.desc}
+              <p className="text-gray-700 mb-8 leading-relaxed text-center">
+                Enjoy a hassle-free operation with our comprehensive online property management
+                service. We take care of every aspect of managing your property, allowing you
+                to focus on what matters most. Our all-inclusive package offers:
               </p>
 
-              <button
-                onClick={() =>
-                  window.open(
-                    "https://calendly.com/airoperate_onboarding/30mins?month=2026-01",
-                    "_blank"
-                  )
-                }
-                className="mt-6 inline-flex items-center justify-center bg-indigo-600 text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition"
-              >
-                Enquire About This Service
+              <div className="space-y-5 text-gray-700 text-sm md:text-base leading-relaxed">
+
+                <p>
+                  <strong>Dynamic Pricing:</strong> Maximize your revenue with our advanced pricing
+                  algorithms that adjust rates based on market demand and competition.
+                </p>
+
+                <p>
+                  <strong>Property Optimization:</strong> Ensure your property stands out with
+                  professional listings, high-quality photos, and compelling descriptions that
+                  attract more guests.
+                </p>
+
+                <p>
+                  <strong>Direct Bookings Management:</strong> Simplify the booking process by
+                  handling direct reservations, reducing reliance on third-party platforms,
+                  and increasing your profits.
+                </p>
+
+                <p>
+                  <strong>Calendar Synchronization:</strong> Seamlessly sync all your booking
+                  calendars to avoid double bookings and manage your availability efficiently.
+                </p>
+
+                <p>
+                  <strong>24/7 Telephone Support for Guests:</strong> Provide exceptional guest
+                  experiences with round-the-clock phone support, addressing any issues or
+                  inquiries promptly.
+                </p>
+
+                <p>
+                  <strong>24/7 Chat Support for Guests:</strong> Enhance guest satisfaction with
+                  instant chat support, available any time to assist with questions or concerns.
+                </p>
+
+                <p className="pt-4">
+                  By choosing our services, you will save 30% on overall management costs compared
+                  to traditional property management solutions. Let us handle every detail of your
+                  property management, ensuring a smooth and profitable operation.
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* CTA BAR */}
+            <div className="flex flex-wrap justify-center gap-8 items-center">
+              <button className="relative group bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 transition text-white px-16 py-5 rounded-2xl font-semibold text-lg shadow-[0_20px_60px_rgba(79,70,229,0.45)]">
+                Subscribe
+                <span className="absolute inset-0 rounded-2xl ring-2 ring-white/20 group-hover:ring-white/40 transition" />
+              </button>
+
+              <button className="bg-gray-900 hover:bg-black transition text-white px-16 py-5 rounded-2xl font-semibold text-lg shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+                Book a Call
               </button>
             </div>
-          ))}
-        </div>
 
-        {/* ===== INFO STRIP ===== */}
-        <div className="bg-indigo-50 border border-indigo-100 rounded-3xl p-10 md:p-14 text-center mb-24">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Build Your Own Custom Hosting Plan
-          </h2>
+          </div>
 
-          <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            With ReadyForGuest, you only pay for the services you need.
-            Start small or go all-in with full automation, guest support and
-            pricing optimisation — and scale as your portfolio grows.
-          </p>
-        </div>
-
-        {/* ===== CTA ===== */}
-        <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-            Ready to Get Started?
-          </h2>
-
-          <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-            Book a free consultation and we’ll help you build a pricing plan
-            tailored to your property and growth goals.
-          </p>
-
-          <button
-            onClick={() =>
-              window.open(
-                "https://calendly.com/airoperate_onboarding/30mins?month=2026-01",
-                "_blank"
-              )
-            }
-            className="bg-gray-900 text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-black transition shadow-md"
-          >
-            Book a Free Call
-          </button>
-
-          <p className="mt-4 text-sm text-gray-500">
-            Free consultation • No setup fees • Cancel anytime • Airbnb compliant
-          </p>
         </div>
 
       </div>
